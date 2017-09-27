@@ -1,0 +1,41 @@
+
+//delete this later...
+var testData = {
+    "success": true,
+    "message": "Found data on : gender for care provider 1",
+    "care_provider_id": "1",
+    "identity_category": "gender",
+    "question_id": "1",
+    "results": [
+        {
+            "question_response": "Fantastic!",
+            "gender": "Non-binary",
+            "count": 1
+        },
+        {
+            "question_response": "Fantastic!",
+            "gender": "Man",
+            "count": 2
+        },
+        {
+            "question_response": "Fantastic!",
+            "gender": "Trans Man",
+            "count": 1
+        },
+        {
+            "question_response": "Not very well, thank you for asking.",
+            "gender": "Woman",
+            "count": 3
+        },
+        {
+            "question_response": "Not very well, thank you for asking.",
+            "gender": "Man",
+            "count": 1
+        },
+        {
+            "question_response": "Not very well, thank you for asking.",
+            "gender": "Non-binary",
+            "count": 4
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MedRate - Bookmarks</title>
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/structure.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1OVuqhmf5QK8WsCzR3iMwjVYO9sNl9Vs&libraries=places"></script>
+    <script type="text/javascript" src="Controller.js"></script>
+    <script type="text/javascript" src="js/Config.js"></script>
+    <script type="text/javascript" src="js/bookmarks.js"></script>
+    <script type="text/javascript" src="./js/notify.js"></script>
+
+</head>
+<body>
+
+<!--Fixed header at the top of the page, includes MedRate title, and signup and signin buttons for navigation-->
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper teal accent-4">
+            <a href="index.html" class="brand-logo center">MedRate</a>
+            <ul id="nav-mobile1" class="right hide-on-med-and-down">
+                <li><a id="account_link" href="account.html"></a></li>
+            </ul>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="register.html" id="SignUpBtn">Sign Up</a></li>
+                <li><a href="signin.html" id="SignInBtn">Sign In</a></li>
+                <li><a href="signout.html" id="SignOutBtn" style="visibility: hidden">Sign Out</a></li>
+                <li><a href="bookmarks.html" id="BookmarksBtn" style="visibility: hidden">Bookmarks</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div id="content_container" class="container">
+    <h3 class="page_header">Bookmarks</h3>
+
+    <!--Shows the list of bookmarks the current user has bookmarked-->
+    <div id="bookmarks_div">
+        <ul id="bookmarks_results" class="collection scale-transition">
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

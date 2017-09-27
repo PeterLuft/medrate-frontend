@@ -1,0 +1,19 @@
+/*.input_box {*/
+    /*width: 75%;*/
+    /*margin-top:5%;*/
+/*}*/
+
+#content_container {
+    margin-top:10%;
+}
+.page_header {
+    margin-bottom: 3%;
+}
+
+.success-text{
+    color: green;
+}
+
+.error-text {
+    color: red;
+}

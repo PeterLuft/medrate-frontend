@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MedRate - Survey</title>
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/structure.css">
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <!-- Javascript Files -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="Controller.js"></script>
+    <script type="text/javascript" src="./js/Config.js"></script>
+    <script type="text/javascript" src="./js/stats.js"></script>
+    <script type="text/javascript" src="./js/bookmarks.js"></script>
+    <script type="text/javascript" src="./js/notify.js"></script>
+
+
+
+</head>
+<body>
+<!--Fixed header at the top of the page, includes MedRate title, and signup and signin buttons for navigation-->
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper teal accent-4">
+            <ul id="nav-mobile1" class="right hide-on-med-and-down">
+                <li><a id="account_link" href="account.html"></a></li>
+            </ul>
+            <a href="index.html" class="brand-logo center">MedRate</a>
+            <ul id="nav-mobile2" class="right hide-on-med-and-down">
+                <li><a href="register.html" id="SignUpBtn">Sign Up</a></li>
+                <li><a href="signin.html" id="SignInBtn">Sign In</a></li>
+                <li><a href="signout.html" id="SignOutBtn" style="visibility: hidden">Sign Out</a></li>
+                <li><a href="bookmarks.html" id="BookmarksBtn" style="visibility: hidden">Bookmarks</a></li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<div id="content_container" class="container">
+    <h4 class="page_header">Stats for This Clinic</h4>
+
+
+    <div class="row">
+        <div class="col s12">
+            <ul class="tabs ">
+                <li class="tab col s2"><a class="option active grey-text text-darken-2" id="gender">Gender</a></li>
+                <li class="tab col s2"><a class ="option grey-text text-darken-2" id="race">Race</a></li>
+                <li class="tab col s2"><a class = "option grey-text text-darken-2" id="sex">Sex</a></li>
+                <li class="tab col s2"><a class = "option grey-text text-darken-2" id="ethnicity">Ethnicity</a></li>
+                <li class="tab col s2"><a class = "option grey-text text-darken-2" id="sexual_orientation">Orientation</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="control-pane" style="float:right;">
+
+        <a class="btn waves-effect waves-light btn-large tooltipped"
+           data-position="bottom" data-delay="50" data-tooltip="Submit a survey"
+           name="action"
+           href="survey.html">
+            <i class="large material-icons">input</i>
+        </a>
+        <br/>
+        <br/>
+        <a class="btn waves-effect waves-light btn-large tooltipped"
+           data-position="bottom" data-delay="50" data-tooltip="Bookmark"
+           name="action" id="bookmarkBtn">
+            <i class="large material-icons">bookmark</i>
+        </a>
+
+    </div>
+
+    <div id="data_visuals">
+
+        <div id="chart_1"></div>
+        <div id="chart_2"></div>
+        <div id="chart_3"></div>
+        <div id="chart_4"></div>
+
+    </div>
+
+</div>
+
+
+</body>

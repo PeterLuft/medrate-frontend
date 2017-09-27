@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MedRate - Sign In</title>
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/structure.css">
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <!-- Javascript Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="Controller.js"></script>
+    <script type="text/javascript" src="./js/Config.js"></script>
+
+</head>
+<body>
+
+
+<!--Fixed header at the top of the page, includes MedRate title, and signup and signin buttons for navigation-->
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper teal accent-4">
+            <ul id="nav-mobile1" class="right hide-on-med-and-down">
+                <li><a id="account_link" href="account.html"></a></li>
+            </ul>
+            <a href="index.html" class="brand-logo center">MedRate</a>
+            <ul id="nav-mobile2" class="right hide-on-med-and-down">
+                <li><a href="register.html" id="SignUpBtn">Sign Up</a></li>
+                <li><a href="signin.html" id="SignInBtn">Sign In</a></li>
+                <li><a href="signout.html" id="SignOutBtn" style="visibility: hidden">Sign Out</a></li>            </ul>
+        </div>
+    </nav>
+</div>
+
+<div id="content_container" class="container">
+    <h3 class="page_header">Sign In</h3>
+    <form id="signin_form" class="">
+        <div class="row">
+            <div class="input-field col s10">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s10">
+                <input id="password" type="password" class="validate">
+                <label for="password">Password</label>
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn waves-effect waves-light" style="margin-left:1%" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+
+        <div id="feedback_box" class="row scale-transition scale-out" style="margin-left:1%">
+            <p id="feedback_text"></p>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
